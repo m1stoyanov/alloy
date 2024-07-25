@@ -37,6 +37,7 @@ pub struct TraceResults {
     #[serde(default)]
     pub trace: Vec<TransactionTrace>,
     /// Enabled if [TraceType::VmTrace] is provided
+    #[serde(default)]
     pub vm_trace: Option<VmTrace>,
 }
 
