@@ -29,6 +29,7 @@ pub enum TraceType {
 #[serde(rename_all = "camelCase")]
 pub struct TraceResults {
     /// Output of the trace
+    #[serde(default)]
     pub output: Bytes,
     /// Enabled if [TraceType::StateDiff] is provided
     pub state_diff: Option<StateDiff>,
